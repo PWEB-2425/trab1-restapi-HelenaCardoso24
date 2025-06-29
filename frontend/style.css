@@ -1,1 +1,23 @@
 /* Estilos para a página */
+
+/* página principal */
+#PrimeiraPagina{    /* Estiliza globalmente tudo o que esta no header */ 
+    display: flex;
+    justify-content: center;    /* poe todos os elementos no centro da página */
+   background-color: aquamarine;
+   border-style: groove;
+}
+
+.Elementos{   /* identifica a classe em que eu quero meter os estilos, esta classe foi identificada no <ul> do html */
+    display: flex;
+    flex-direction: row;    /* poe os elemtos lado a lado */
+    justify-content: center;  /* espaça os elementos */
+    list-style: none;   /* retira o pontinho da fresnte do elemento de texto */
+    
+    
+}
+
+.Elementos li button{
+    padding: 20px;
+    margin:45px;
+}

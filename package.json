@@ -1,0 +1,23 @@
+{
+  "name": "pweb-2425-classroom-trab1-restapi-trab1_template-main",
+  "version": "1.0.0",
+  "description": "## Consumo e Implementação de APIs RESTful",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1",
+    "mongose": "^0.0.2-security"
+  }
+}

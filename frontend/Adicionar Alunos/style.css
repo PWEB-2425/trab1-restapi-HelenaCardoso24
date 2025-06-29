@@ -1,0 +1,57 @@
+/* Centralizar a página inteira */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Ocupa 100% da altura da janela */
+    margin: 0;               /* Remove margens padrão */
+    background-color: #f4f4f4; /* Fundo suave */
+    font-family: Arial, sans-serif; /* Fonte agradável */
+}
+
+/* Centraliza o título no topo */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color:aquamarine; /* Fundo transparente ou coloca uma cor se quiseres */
+}
+
+/* Estilo da caixa do formulário */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo dos inputs */
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do título */
+h1 {
+    margin-bottom: 20px;
+}
