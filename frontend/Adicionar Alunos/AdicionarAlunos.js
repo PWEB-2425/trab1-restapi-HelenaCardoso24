@@ -1,5 +1,5 @@
 // Função para adicionar aluno
-const apiUrl =  "http://localhost:3000/alunos";
+const apiUrl =  "https://trab1-restapi-helenacardoso24.onrender.com/alunos";
 
 document.getElementById('btnAdd').addEventListener('click', async (e) => {
             e.preventDefault();
