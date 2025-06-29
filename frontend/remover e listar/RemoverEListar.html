@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="../../mock-server/json_server.js" defer></script> -->
+    <script src="./removerElListar.js" defer></script>
+</head>
+<body>
+
+    <h1 id="btnAdd">Lista de Alunos</h1>
+
+    <!-- Campo de pesquisa com ícone -->
+    <div class="pesquisa-container">
+        <span class="lupa">&#128269;</span> <!-- Ícone de lupa -->
+        <input type="text" id="pesquisa" placeholder="Procurar por nome, idade, ano escolar ou curso..." onkeyup="filtrarAlunos()">
+    </div>
+
+    <!-- Tabela de alunos -->
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Apelido</th>
+                <th>Idade</th>
+                <th>Ano Escolar</th>
+                <th>Curso</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaAlunos"></tbody>
+    </table>
+
+    <br>
+    <button><a href="../index.html" >Voltar para Início</a></button> <!-- Butão de voltar para a página inicial -->
+
+</body>
