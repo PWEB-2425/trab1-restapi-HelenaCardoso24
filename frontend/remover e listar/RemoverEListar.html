@@ -16,9 +16,12 @@
     <!-- Campo de pesquisa com ícone -->
     <div class="pesquisa-container">
         <span class="lupa">&#128269;</span> <!-- Ícone de lupa -->
-        <input type="text" id="pesquisa" placeholder="Procurar por nome, idade, ano escolar ou curso..." onkeyup="filtrarAlunos()">
+        <input type="text" id="barrinhaDePesquisa" placeholder="Procurar por nome, idade, ano escolar ou curso..." >
     </div>
 
+    <button id="procurar">Procurar</button> <!-- botão que procura os alunos na barra de pesquisa -->
+
+    
     <!-- Tabela de alunos -->
     <table id="tabela">
         <thead>
@@ -26,7 +29,7 @@
                 <th>Nome</th>
                 <th>Apelido</th>
                 <th>Idade</th>
-                <th>Ano Escolar</th>
+                <th>Ano Curricular</th>
                 <th>Curso</th>
                 <th>Ações</th>
             </tr>
@@ -36,5 +39,5 @@
 
     <br>
     <button><a href="../../index.html" >Voltar para Início</a></button> <!-- Butão de voltar para a página inicial -->
-
+    
 </body>

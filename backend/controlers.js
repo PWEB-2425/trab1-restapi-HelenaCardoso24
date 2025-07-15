@@ -18,3 +18,11 @@ exports.delete = async(req,res) => {
     const alunos = await aluno.deleteOne(req.body);
 
 }
+
+exports.procurarAluno = async(req, res) => {
+    
+    const procurar = await aluno.find(req.params);
+
+    console.log(procurar);
+    res.json(procurar);
+}

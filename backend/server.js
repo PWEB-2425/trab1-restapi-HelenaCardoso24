@@ -18,7 +18,7 @@ app.use(cors())
 app.use(express.json());
 
 // Usa as rotas criadas para qualquer pedido que comece com /users
-app.use('/alunos', AlunoRoutes);
+app.use('/alunos', AlunoRoutes);// as rotas vao ser usadas em /alunos
 
 // Conecta ao banco MongoDB usando a URL definida no .env
 mongoose.connect("mongodb+srv://helena:1234aA@ze.zukd2sa.mongodb.net/?retryWrites=true&w=majority&appName=Ze", { dbName:'academicos' })

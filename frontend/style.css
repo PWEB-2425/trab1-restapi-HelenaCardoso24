@@ -1,23 +1,80 @@
-/* Estilos para a página */
+/* frontend/style.css */
 
-/* página principal */
-#PrimeiraPagina{    /* Estiliza globalmente tudo o que esta no header */ 
-    display: flex;
-    justify-content: center;    /* poe todos os elementos no centro da página */
-   background-color: aquamarine;
-   border-style: groove;
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.Elementos{   /* identifica a classe em que eu quero meter os estilos, esta classe foi identificada no <ul> do html */
-    display: flex;
-    flex-direction: row;    /* poe os elemtos lado a lado */
-    justify-content: center;  /* espaça os elementos */
-    list-style: none;   /* retira o pontinho da fresnte do elemento de texto */
-    
-    
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.Elementos li button{
-    padding: 20px;
-    margin:45px;
+/* Cabeçalho */
+header#PrimeiraPagina {
+  background: #4a90e2;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container do conteúdo */
+#Conteudo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Lista de botões */
+.Elementos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Botões */
+.Elementos li button {
+  background: #fff;
+  border: 2px solid #4a90e2;
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Link dentro do botão */
+.Elementos li button a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Hover no botão */
+.Elementos li button:hover {
+  background: #4a90e2;
+}
+
+.Elementos li button:hover a {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+  .Elementos {
+    flex-direction: row;
+  }
 }
