@@ -18,6 +18,8 @@ async function fetchAlunos() {
                     <td>${aluno.idade}</td>
                     <td>${aluno.AnoCurricular}</td>
                     <td>${aluno.curso}</td>
+
+                    <td> <button><a href="../Adicionar Alunos/AdicionarAlunos.html?id=${aluno._id}">Atualiza dados</a></button></td>
                 `;
 
 
@@ -63,11 +65,11 @@ async function procurarAluno() {
     btnProcura.textContent = 'Remover';
     btnProcura.onclick = () => removerAluno(aluno._id);
 
+
     item.appendChild(btnProcura);
     lista.appendChild(item);
     ;
 }
-
 
 
 // Função para remover aluno
