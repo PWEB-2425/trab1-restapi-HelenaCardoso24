@@ -26,3 +26,7 @@ exports.procurarAluno = async(req, res) => {
     console.log(procurar);
     res.json(procurar);
 }
+
+exports.AtualizarAluno =async (req,res) => {
+    const atualizar = await aluno.findOneAndUpdate(req.params, req.body,{new:true});
+}
