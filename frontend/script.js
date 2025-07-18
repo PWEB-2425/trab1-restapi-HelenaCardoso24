@@ -1,1 +1,0 @@
-// JS para operações CRUD com Fetch API

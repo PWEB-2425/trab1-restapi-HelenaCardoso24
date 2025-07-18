@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="../../mock-server/json_server.js" defer></script> -->
+    <script src="./AdicionarAlunos.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Alunos</h1>
+    <form id="alunoForm">   <!-- Formulário com ID "alunoForm" (para facilitar o acesso via JavaScript) -->
+        <label for="nome">Nome:</label>  <!-- Rótulo (texto explicativo) para o campo "nome" -->
+        <input type="text" id="InputNome" name="nome" required><br><br>  <!-- Campo de entrada de texto para o nome do aluno. O atributo 'required' obriga o preenchimento. -->
+                                                                    <!-- <br> é uma quebra de linha e espaço visual -->
+        <label for="apelido">Apelido:</label>  <!-- Rótulo (texto explicativo) para o campo "nome" -->
+        <input type="text" id="InputApelido" name="nome" required><br><br>
+
+        <label for="idade">Idade:</label>   <!-- Rótulo para o campo "idade" -->
+        <input type="text" id="InputIdade" name="idade" required><br><br>  <!-- Campo de entrada numérica para a idade do aluno. O 'required' também é obrigatório. -->
+
+        <label for="curso">Curso:</label>   <!-- Rótulo com o campo curso -->
+        <input type="text" id="InputCurso" name="curso" required><br><br>
+
+        <label for = "AnoCurricular">Ano Curricular:</label>
+        <input type="text" id="InputAnoCurricular" name="AnoCurricular" required><br><br>
+
+        
+    </form>
+    <button id="btnAdd" >Adicionar Aluno</button>
+
+
+
+    <button ><a href="../../index.html">Voltar para Início</a></button>    <!-- butão para voltar a página inicial -->
+
+</body>
+</html>
