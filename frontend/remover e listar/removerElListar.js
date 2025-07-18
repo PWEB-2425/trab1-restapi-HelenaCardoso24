@@ -1,6 +1,6 @@
 // Função para listar alunos
-//const apiUrl =  "https://trab1-restapi-helenacardoso24.onrender.com/alunos";
-const apiUrl ="http://localhost:3000/alunos"
+const apiUrl =  "https://trab1-restapi-helenacardoso24.onrender.com/alunos";
+//const apiUrl ="http://localhost:3000/alunos"
 
 async function fetchAlunos() {
     const resposta = await fetch(apiUrl);
